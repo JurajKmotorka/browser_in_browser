@@ -32,6 +32,10 @@ body {
   border: 3px solid black;
   border-radius: 6px;
 }
+
+.login button:hover {
+  background-color: lightgray;
+}
 .login div {
   text-align: center;
   padding: 30px 30px;
