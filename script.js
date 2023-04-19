@@ -1,13 +1,11 @@
 const loginBtn = document.querySelector("#loginBtn");
-const wrapper = document.querySelector(".wrapper");
+const wrapper = document.querySelector("#wrapper");
 const login = document.querySelector(".login");
 
 loginBtn.addEventListener("click", () => {
   wrapper.style.display = "block";
   login.style.display = "none";
 });
-
-const modal = document.body;
 
 let isDragging = false;
 let currentX;
@@ -17,15 +15,24 @@ let initialY;
 let xOffset = 0;
 let yOffset = 0;
 
-modal.addEventListener("mousedown", dragStart);
-modal.addEventListener("mouseup", dragEnd);
-modal.addEventListener("mousemove", drag);
+document.body.addEventListener("mousedown", dragStart);
+document.body.addEventListener("mouseup", dragEnd);
+document.body.addEventListener("mousemove", drag);
+
+// Get a reference to the target element
+const target = document.getElementById("wrapper");
 
 function dragStart(e) {
+  if (e.target !== target) {
+    return;
+  }
+
   initialX = e.clientX - xOffset;
   initialY = e.clientY - yOffset;
 
-  isDragging = true;
+  if (e.target === wrapper) {
+    isDragging = true;
+  }
 }
 
 function dragEnd(e) {
@@ -45,7 +52,7 @@ function drag(e) {
     xOffset = currentX;
     yOffset = currentY;
 
-    setTranslate(currentX, currentY, modal);
+    setTranslate(currentX, currentY, target);
   }
 }
 
