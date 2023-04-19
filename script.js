@@ -15,9 +15,9 @@ let initialY;
 let xOffset = 0;
 let yOffset = 0;
 
-document.body.addEventListener("mousedown", dragStart);
-document.body.addEventListener("mouseup", dragEnd);
-document.body.addEventListener("mousemove", drag);
+document.addEventListener("mousedown", dragStart);
+document.addEventListener("mouseup", dragEnd);
+document.addEventListener("mousemove", drag);
 
 // Get a reference to the target element
 const target = document.getElementById("wrapper");
