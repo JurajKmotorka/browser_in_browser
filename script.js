@@ -1,9 +1,9 @@
 const loginBtn = document.querySelector("#loginBtn");
-const wrapper = document.querySelector("#wrapper");
+const modal = document.querySelector("#modal");
 const login = document.querySelector(".login");
 
 loginBtn.addEventListener("click", () => {
-  wrapper.style.display = "block";
+  modal.style.display = "block";
   login.style.display = "none";
 });
 
@@ -20,7 +20,7 @@ document.addEventListener("mouseup", dragEnd);
 document.addEventListener("mousemove", drag);
 
 // Get a reference to the target element
-const target = document.getElementById("wrapper");
+const target = document.getElementById("modal");
 
 function dragStart(e) {
   if (!target.contains(e.target)) {
