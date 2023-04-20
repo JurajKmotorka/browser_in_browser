@@ -23,16 +23,14 @@ document.addEventListener("mousemove", drag);
 const target = document.getElementById("wrapper");
 
 function dragStart(e) {
-  if (e.target !== target) {
+  if (!target.contains(e.target)) {
     return;
   }
 
   initialX = e.clientX - xOffset;
   initialY = e.clientY - yOffset;
 
-  if (e.target === wrapper) {
-    isDragging = true;
-  }
+  isDragging = true;
 }
 
 function dragEnd(e) {
