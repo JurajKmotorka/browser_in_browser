@@ -83,7 +83,7 @@ button {
 
 .urlbar {
   height: 29px;
-  color: lightgray;
+  color: #909091;
   background-color: #131415;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ button {
 .urlbar img {
   padding: 3px;
 }
-.mainlink {
+#modal .mainlink {
   color: white;
 }
 
