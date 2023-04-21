@@ -8,50 +8,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img class="background" src="/Figma_background.jpg" alt="background" />
-
-    <div class="login">
-      <button id="loginBtn">
-        <img src="/Google__G__Logo.svg.png" width="18px" alt="Google" /><span
-          >Continue with Google</span
-        >
-      </button>
-      <div>or</div>
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Password" />
-      <button class="bottom-login">Log in</button>
-      <a href="/">Reset password</a>
-      <div>No account? <a>Create one</a></div>
-    </div>
-    <div id="modal">
-      <div class="header">
-        <img src="/logo_white.png" alt="google" /><span
-          >Sign in - Google accounts - Google Chrome</span
-        >
-      </div>
-      <div class="urlbar">
-        <img src="/lock.svg" width="18px" alt="lock" /><span class="mainlink"
-          >accounts.google.com/</span
-        >o/oauth2/v2/auth/identifier?client_id=532352704633-6pkcesnea5...
-      </div>
-      <div class="subheader">
-        <img src="/Google__G__Logo.svg.png" alt="google" width="12px" /><span
-          >Sign in with Google</span
-        >
-      </div>
-
-      <h1>Sign in</h1>
-      <h2>to continue to <a href="https://www.figma.com/">Figma</a></h2>
-      <div class="input-container">
+    <div class="top-navbar"><img src="figma_white.png" height="20px" /></div>
+    <div class="background">
+      <div class="login">
+        <h1 class="figma-header">
+          Want to check out this file? Log in or sign up
+        </h1>
+        <button id="loginBtn">
+          <img src="/Google__G__Logo.svg.png" width="18px" alt="Google" /><span
+            >Continue with Google</span
+          >
+        </button>
+        <div>or</div>
         <input type="text" placeholder="Email" />
-        <a href="/">Forgot email?</a>
         <input type="text" placeholder="Password" />
-        <a href="/">Forgot password?</a>
-        <div class="navbar">
-          <a href="/">Create account</a><button>Next</button>
+        <button class="bottom-login">Log in</button>
+        <a href="/">Reset password</a>
+        <div>No account? <a>Create one</a></div>
+      </div>
+      <div id="modal">
+        <div class="header">
+          <img src="/logo_white.png" alt="google" /><span
+            >Sign in - Google accounts - Google Chrome</span
+          >
         </div>
-        <div class="footer">
-          <span>Help</span><span>Privacy</span><span>Terms</span>
+        <div class="urlbar">
+          <img src="/lock.svg" width="18px" alt="lock" /><span class="mainlink"
+            >accounts.google.com/</span
+          >o/oauth2/v2/auth/identifier?client_id=532352704633-6pkcesnea5...
+        </div>
+        <div class="subheader">
+          <img src="/Google__G__Logo.svg.png" alt="google" width="12px" /><span
+            >Sign in with Google</span
+          >
+        </div>
+
+        <h1>Sign in</h1>
+        <h2>to continue to <a href="https://www.figma.com/">Figma</a></h2>
+        <div class="input-container">
+          <input type="text" placeholder="Email" />
+          <a href="/">Forgot email?</a>
+          <input type="text" placeholder="Password" />
+          <a href="/">Forgot password?</a>
+          <div class="navbar">
+            <a href="/">Create account</a><button>Next</button>
+          </div>
+          <div class="footer">
+            <span>Help</span><span>Privacy</span><span>Terms</span>
+          </div>
         </div>
       </div>
     </div>
