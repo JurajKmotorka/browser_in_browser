@@ -1,1 +1,1 @@
-Browser in Browser breach example for cybersecurity training
+Browser in Browser scam example for cybersecurity training
